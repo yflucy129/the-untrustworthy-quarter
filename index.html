@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Untrustworthy Quarter</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="progress" aria-hidden="true"><span></span></div>
+    <div class="tooltip" id="tooltip" role="status" aria-hidden="true"></div>
+
+    <header class="topbar">
+      <a class="wordmark" href="#scene-1">The Untrustworthy Quarter</a>
+      <nav class="dotnav" aria-label="Story sections">
+        <a href="#scene-1" aria-label="Title"></a>
+        <a href="#scene-4" aria-label="Range"></a>
+        <a href="#scene-7" aria-label="Tiers"></a>
+        <a href="#scene-12" aria-label="Implications"></a>
+        <a href="#scene-16" aria-label="Close"></a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="scene-1" class="scene title-scene photo-hero light">
+        <div class="hero-photo-frame" aria-hidden="true">
+          <img src="assets/produce-hero.png" alt="">
+        </div>
+        <div class="copy title-copy">
+          <p class="eyebrow">Fresh produce, measured twice</p>
+          <h1>The Untrustworthy Quarter</h1>
+          <p class="dek">Why one in four produce prices is not what it seems.</p>
+        </div>
+        <div class="visual title-visual" aria-hidden="true">
+          <div class="quarter-mark">
+            <span>1</span>
+            <span>in</span>
+            <span>4</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="scene-2" class="scene hook-scene poster-scene light">
+        <div class="copy">
+          <p class="eyebrow">The visible kind of mismatch</p>
+          <h2>Walmart paid <span class="metric-highlight danger">$45M</span> because of a price tag.</h2>
+          <p>In 2024, Walmart settled a class action alleging shelf prices and checkout prices did not match.</p>
+          <p>But there is another kind of mismatch that happens every day, and it is completely legal.</p>
+          <p class="source-note">Source: <a href="https://www.vpm.org/npr-news/2024-04-06/some-walmart-shoppers-could-get-up-to-500-in-cash-from-a-class-action-settlement">NPR/VPM, Walmart weighted groceries settlement, 2024</a></p>
+        </div>
+        <div class="visual receipt-visual" aria-hidden="true">
+          <div class="receipt">
+            <div class="receipt-top"></div>
+            <p>produce aisle</p>
+            <div class="receipt-line"><span>bagged citrus</span><span>$8.94</span></div>
+            <div class="receipt-line muted"><span>shelf tag</span><span>$7.88</span></div>
+            <div class="receipt-rule"></div>
+            <strong>$45M</strong>
+            <em>settlement</em>
+          </div>
+        </div>
+      </section>
+
+      <section id="scene-3" class="scene setup-scene diagonal-scene light">
+        <div class="copy">
+          <p class="eyebrow">The quieter kind</p>
+          <h2>USDA tracks two prices for every fruit and vegetable.</h2>
+          <p>One is what you pay at the register.</p>
+          <p>The other is what you actually eat.</p>
+          <p class="source-note">Data source: <a href="https://www.ers.usda.gov/data-products/fruit-and-vegetable-prices">USDA ERS Fruit and Vegetable Prices</a></p>
+        </div>
+        <div class="visual tag-visual" aria-hidden="true">
+          <div class="price-tag">
+            <span>Shelf price</span>
+            <strong>$2.51</strong>
+            <small>per pound bought</small>
+          </div>
+          <div class="arrow-line"></div>
+          <div class="price-tag real">
+            <span>Real price</span>
+            <strong>$6.69</strong>
+            <small>per edible pound</small>
+          </div>
+        </div>
+      </section>
+
+      <section id="scene-4" class="scene chart-scene range-feature full-chart heavy">
+        <div class="copy">
+          <p class="eyebrow">Act 2 / Magnitude</p>
+          <h2>The gap runs from <span class="metric-highlight cool">-14%</span> to <span class="metric-highlight danger">+167%</span>.</h2>
+          <p>Most items cluster low. A few do not.</p>
+        </div>
+        <div class="visual chart-card">
+          <div id="chart-range" class="chart" role="img" aria-label="Ranked bar chart of inflation for 66 fresh produce items"></div>
+        </div>
+      </section>
+
+      <section id="scene-5" class="scene chart-scene scatter-feature chart-first heavy">
+        <div class="copy">
+          <p class="eyebrow">Shelf price vs. edible price</p>
+          <h2>Most produce sits on the line. Some does not.</h2>
+          <p class="sub">The diagonal is honest pricing: what you buy costs the same as what you eat.</p>
+          <p>Nothing on the shelf tells you which side of the line a product is on.</p>
+        </div>
+        <div class="visual chart-card">
+          <div id="chart-scatter-line" class="chart" role="img" aria-label="Scatterplot comparing shelf price and real edible price"></div>
+        </div>
+      </section>
+
+      <section id="scene-6" class="scene context-scene regulation-feature light">
+        <div class="copy wide-copy">
+          <p class="eyebrow">Why the shelf stays quiet</p>
+          <h2>For raw produce, nutrition labeling is voluntary.</h2>
+          <p>FDA requires Nutrition Facts for most prepared foods. Raw produce and fish are handled differently: retailers are urged to provide point-of-purchase nutrition information, but the program is voluntary.</p>
+          <p>The shelf is not hiding the gap. No one requires it to explain the gap in the first place.</p>
+          <p class="source-note">Sources: <a href="https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods">FDA food labeling overview</a>; <a href="https://www.law.cornell.edu/cfr/text/21/101.42">21 CFR 101.42</a></p>
+        </div>
+        <div class="visual regulation-visual" aria-hidden="true">
+          <div class="label-card required">
+            <svg class="label-icon" viewBox="0 0 120 92" aria-hidden="true">
+              <rect x="28" y="12" width="64" height="70" rx="6"></rect>
+              <line x1="42" y1="30" x2="78" y2="30"></line>
+              <line x1="42" y1="43" x2="78" y2="43"></line>
+              <line x1="42" y1="56" x2="78" y2="56"></line>
+              <line x1="42" y1="69" x2="64" y2="69"></line>
+            </svg>
+            <span>Packaged food</span>
+            <strong>Nutrition Facts</strong>
+            <i>required</i>
+          </div>
+          <div class="label-card voluntary">
+            <svg class="label-icon produce-icon" viewBox="0 0 120 92" aria-hidden="true">
+              <path d="M58 29 C48 12 28 15 25 35 C21 63 46 78 60 78 C74 78 99 63 95 35 C92 15 72 12 62 29"></path>
+              <path d="M60 28 C61 18 67 11 77 8"></path>
+              <path d="M77 8 C82 19 72 25 61 23"></path>
+            </svg>
+            <span>Raw produce</span>
+            <strong>Point-of-purchase<br>nutrition info</strong>
+            <i>voluntary</i>
+          </div>
+        </div>
+      </section>
+
+      <section id="scene-7" class="scene chart-scene tier-feature centered-chart heavy">
+        <div class="copy">
+          <p class="eyebrow">Act 3 / The tiers</p>
+          <h2>Three tiers, by how visible the waste is.</h2>
+          <p>1 in 4 produce items belongs to a tier the shelf cannot help you see.</p>
+          <p class="method-note">Tier labels are this project's classification of the 66 fresh USDA rows.</p>
+        </div>
+        <div class="visual chart-card">
+          <div id="chart-tiers" class="chart" role="img" aria-label="Donut chart showing honest, forgivable, and deceptive produce tiers"></div>
+        </div>
+      </section>
+
+      <section id="scene-8" class="scene chart-scene forgivable-feature reverse-scene heavy">
+        <div class="copy">
+          <p class="eyebrow">Forgivable</p>
+          <h2>You know watermelons have rinds. You do not know they are <span class="metric-highlight warning">48%</span>.</h2>
+          <p>Average price inflation in this tier: 83%.</p>
+        </div>
+        <div class="visual visual-stack">
+          <figure class="photo-card produce-photo rind-photo" aria-hidden="true">
+            <img src="assets/produce-hero.png" alt="">
+          </figure>
+          <div class="chart-card">
+            <div id="chart-forgivable" class="chart" role="img" aria-label="Dumbbell chart comparing shelf price and real edible price for forgivable items"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="scene-9" class="scene chart-scene artichoke-scene anatomy-feature heavy">
+        <div class="copy">
+          <p class="eyebrow">Deceptive</p>
+          <h2>You pay for <span class="metric-highlight danger">100%</span> of an artichoke. You eat <span class="metric-highlight honest">38%</span>.</h2>
+          <p>The shelf says $2.51. It does not say $6.69.</p>
+        </div>
+        <div class="visual chart-card">
+          <div id="chart-artichoke" class="chart" role="img" aria-label="Artichoke price anatomy showing discarded and eaten portions"></div>
+        </div>
+      </section>
+
+      <section id="scene-10" class="scene chart-scene hidden-feature full-chart heavy">
+        <div class="copy">
+          <p class="eyebrow">Hidden mechanics</p>
+          <h2>Three ways the shelf hides the waste.</h2>
+          <p>Each of these requires you to know something the shelf does not tell you.</p>
+        </div>
+        <div class="visual chart-card">
+          <div id="chart-hidden" class="chart" role="img" aria-label="Grouped chart showing structural, cooking, and trimming waste"></div>
+        </div>
+      </section>
+
+      <section id="scene-11" class="scene chart-scene exception-feature light">
+        <div class="copy">
+          <p class="eyebrow">A rule with exceptions</p>
+          <h2>Some items go the other way.</h2>
+          <p>For three fresh items, USDA's yield factor is above 1, so the real-price calculation drops below the shelf price.</p>
+        </div>
+        <div class="visual chart-card">
+          <div id="chart-negative" class="chart" role="img" aria-label="Small bar chart showing negative price inflation for collard greens, kale, and brussels sprouts"></div>
+        </div>
+      </section>
+
+      <section id="scene-12" class="scene context-scene news-feature poster-scene light">
+        <div class="copy wide-copy">
+          <p class="eyebrow">Act 4 / Implications</p>
+          <h2>Walmart's <span class="metric-highlight danger">$45M</span> was news. This is not.</h2>
+          <p>The Walmart case was about allegedly illegal pricing.</p>
+          <p>This is legal pricing.</p>
+          <p>No one, from industry to regulators to consumers, has much reason to <span class="keep-together">surface it.</span></p>
+          <p class="source-note">Context: <a href="https://www.ftc.gov/reports/feeding-america-time-crisis-ftc-staff-report-united-states-grocery-supply-chain-covid-19-pandemic">FTC 2024 grocery supply-chain report</a>; USDA ERS 2023 dataset; FDA 21 CFR 101</p>
+        </div>
+        <div class="visual silence-visual accountability-visual" aria-hidden="true">
+          <div class="shelf-silence-card">
+            <div class="silent-tag"></div>
+            <div class="silent-rows">
+              <span></span><span></span><span></span>
+            </div>
+          </div>
+          <div class="reason-wheel">
+            <span>industry</span>
+            <span>regulators</span>
+            <span>media</span>
+            <span>shoppers</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="scene-13" class="scene chart-scene pattern-feature chart-first heavy">
+        <div class="copy">
+          <p class="eyebrow">No useful pattern</p>
+          <h2>You cannot predict deception from the price.</h2>
+          <p>Cheap items can mislead you. Expensive items can be honest. There is no rule.</p>
+        </div>
+        <div class="visual chart-card">
+          <div id="chart-price-pattern" class="chart" role="img" aria-label="Scatterplot showing no clear pattern between shelf price and inflation"></div>
+        </div>
+      </section>
+
+      <section id="scene-14" class="scene chart-scene processed-feature reverse-scene heavy">
+        <div class="copy">
+          <p class="eyebrow">The workaround</p>
+          <h2>Sometimes canned is cheaper. Sometimes it is not.</h2>
+          <p>Even the workaround is unreliable.</p>
+        </div>
+        <div class="visual chart-card">
+          <div id="chart-processed" class="chart" role="img" aria-label="Comparison chart of fresh versus canned or frozen prices per cup equivalent"></div>
+        </div>
+      </section>
+
+      <section id="scene-15" class="scene chart-scene category-feature full-chart heavy">
+        <div class="copy">
+          <p class="eyebrow">Aisle comparison</p>
+          <h2>The fruit aisle misleads more than the vegetable aisle.</h2>
+          <p>Fruits average 39% inflation. Vegetables average 25%.</p>
+          <p>The melons, citrus, and pomegranates carry most of the gap.</p>
+        </div>
+        <div class="visual chart-card">
+          <div id="chart-category" class="chart" role="img" aria-label="Bar chart comparing average inflation for fruits and vegetables"></div>
+        </div>
+      </section>
+
+      <section id="scene-16" class="scene final-scene photo-finale light">
+        <div class="final-photo" aria-hidden="true">
+          <img src="assets/produce-hero.png" alt="">
+        </div>
+        <div class="copy final-copy">
+          <p class="eyebrow">Close</p>
+          <h2><span class="metric-highlight honest">75%</span> of the produce aisle tells you the truth.</h2>
+          <p>The other 25% cannot.</p>
+          <p>Not because anyone is lying, but because no one has ever required the shelf to speak.</p>
+          <div class="sources-list" id="sources-list"></div>
+        </div>
+      </section>
+    </main>
+
+    <script src="data/produce.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
